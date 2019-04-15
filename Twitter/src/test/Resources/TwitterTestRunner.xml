@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Twitter Rest API test">
+
+
+
+    <test name="Twitter API Testing" preserve-order="true">
+        <classes>
+        <class name= "apiTests.TweetsTest"></class>
+        </classes>
+    </test>
+
+</suite>

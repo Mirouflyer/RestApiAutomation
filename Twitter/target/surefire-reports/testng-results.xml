@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Twitter Rest API test" duration-ms="1254" started-at="2019-04-15T21:23:54Z" finished-at="2019-04-15T21:23:55Z">
+    <groups>
+    </groups>
+    <test name="Twitter API Testing" duration-ms="1254" started-at="2019-04-15T21:23:54Z" finished-at="2019-04-15T21:23:55Z">
+      <class name="apiTests.TweetsTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apiTests.TweetsTest@79b4d0f]" name="setUp" is-config="true" duration-ms="11" started-at="2019-04-15T21:23:54Z" finished-at="2019-04-15T21:23:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetUserTimeLine()[pri:0, instance:apiTests.TweetsTest@79b4d0f]" name="testGetUserTimeLine" duration-ms="1232" started-at="2019-04-15T21:23:54Z" finished-at="2019-04-15T21:23:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserTimeLine -->
+      </class> <!-- apiTests.TweetsTest -->
+    </test> <!-- Twitter API Testing -->
+  </suite> <!-- Twitter Rest API test -->
+</testng-results>
