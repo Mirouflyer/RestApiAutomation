@@ -1,9 +1,7 @@
 package tweets;
 
 import io.restassured.response.Response;
-import org.apache.http.HttpStatus;
 import user.BaseTwitterUser;
-
 import static io.restassured.RestAssured.given;
 
 public class TweetsUser extends BaseTwitterUser {
