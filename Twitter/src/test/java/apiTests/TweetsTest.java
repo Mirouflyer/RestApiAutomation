@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import static org.hamcrest.Matchers.hasValue;
+import static org.hamcrest.Matchers.not;
+
 public class TweetsTest {
 
     protected TweetsUser tweetsUser;
@@ -53,7 +56,8 @@ public class TweetsTest {
     @Test(dependsOnMethods = {"testCreateTweet"}, enabled = false)
     public void testUserCanDeleteTweet() {
         Response response = this.tweetsUser.deleteTweet(this.tweetId);
-        response.then().statusCode(HttpStatus.SC_OK);
+        response.then().statusCode(HttpStatus.SC_OK)
+        .and().body("$",not(hasValue(this.tweetId)));
         Assert.assertEquals(200, response.getStatusCode());
     }
 
